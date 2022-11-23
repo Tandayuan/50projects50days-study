@@ -12,7 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-origin: top left;
+    /* 改变旋转的原点 */
+    transform-origin: top left; 
     transition: transform 0.5s linear;
 }
 .wrapper.show-tab{
