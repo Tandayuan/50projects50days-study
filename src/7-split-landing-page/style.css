@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .box {
+  flex: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  transition: flex 1s ease-in-out;
+}
+.box h2 {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
+}
+.box .btn {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 20px 80px;
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: 800;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-100%);
+}
+.box.left {
+  background-image: url(./ps.jpg);
+}
+.box.right {
+  background-image: url(./xbox.jpg);
+}
+.box.left::before,
+.box.right::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.box.left::before {
+  background-color: #817fee;
+  opacity: 0.9;
+}
+.box.right::before {
+  background-color: #000;
+  opacity: 0.5;
+}
+.box.left .btn:hover {
+  border: none;
+  background-color: #5754ec;
+}
+.box.right .btn:hover {
+  border: none;
+  background-color: #1c7a1c;
+}
+.box.show-full {
+  flex: 3;
+  z-index: 1;
+}
