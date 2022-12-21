@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #4682b4;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .login-box {
+  background-color: #2a4e6c;
+  border-radius: 5px;
+  padding: 10px 40px;
+  color: white;
+}
+.login-box h2 {
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+.login-box .form-control {
+  margin: 20px 0 40px;
+  width: 300px;
+  position: relative;
+}
+.form-control input {
+  width: 100%;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  padding: 15px 0;
+  /* font-size: 18px; */
+  color: white;
+}
+/* .form-control input:valid 校验时出现的样式 */
+.form-control input:focus,
+.form-control input:valid {
+  /* 聚焦元素时消除掉聚焦的边框 */
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  transform: translateY(-30px);
+  color: lightblue;
+}
+.btn-box button {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  background-color: #add8e6;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-box button:focus {
+  outline: 0;
+}
+.btn-box button:active {
+  scale: 0.98;
+}
+.tips-box {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.tips-box a {
+  text-decoration: none;
+  color: #65bae6;
+}
