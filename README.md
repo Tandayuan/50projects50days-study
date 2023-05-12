@@ -1,4 +1,4 @@
-# 50 Projects in 50 Days - HTML/CSS and JavaScript 2023-05-12消失乱码
+# 50 Projects in 50 Days - HTML/CSS and JavaScript 2023-05-12我也测试
 
 This is the main repository for all of the projects in the course.
 
