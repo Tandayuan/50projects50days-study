@@ -1,4 +1,4 @@
-# 50 Projects in 50 Days - HTML/CSS and JavaScript 2023-05-12Ò²¸ü¸Ä
+# 50 Projects in 50 Days - HTML/CSS and JavaScript 2023-05-12ä¹±ç æ›´æ­£
 
 This is the main repository for all of the projects in the course.
 
